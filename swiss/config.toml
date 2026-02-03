@@ -1,0 +1,21 @@
+[import]
+dir = "/home/tomas/current_work/p2p/testdata/"
+channels = ["FL1-A", "FL2-A"]	# The channels used
+
+[fingerprint]
+size = [20, 20]					# The fingerprint size
+boundary = [					# A boundary for the channels to synchronize fingerprints 
+	[3.7, 5.5], 
+	[2, 5]
+]
+
+[gate]
+tcc = [							# The TCC gate
+	[3.7, 3.7, 6.5, 6.5], 
+	[0.0, 3.7, 6.0, 0.0]
+]
+icc = [							# The ICC gate
+	[4.1, 4.1, 6.5, 6.5], 
+	[0.0, 3.7, 6.0, 0.0]
+]
+hna = 4.8						# The HNA gate
